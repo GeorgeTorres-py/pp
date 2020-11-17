@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>PROUDLY POTENT</title>
+</head>
+<script>
+  // Accordion
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") === -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+
+
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+<style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<header>
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"> <a onclick="myAccFunc()" href="/var/www/html/zapp/index.html" id="myBtn"><b>PROUDLY POTENT</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-.text-success" style="font-weight:bold">
+   <a onclick="myAccFunc()" href="/var/www/html/zapp/flower.html" class="w3-button w3-block w3-white w3-left-align w3-hover-light-green" id="myBtn">FLOWER </a>
+	<a onclick="myAccFunc()" href="/var/www/html/zapp/concentrate.html" class="w3-button w3-block w3-white w3-left-align w3-hover-light-green" id="myBtn">CONCENTRATE </a>
+    <a onclick="myAccFunc()" href="/var/www/html/zapp/edibles.html" class="w3-button w3-block w3-white w3-left-align w3-hover-light-green" id="myBtn"> EDIBLES </a>
+    </a>
+
+    </div>
+
+  </div>
+
+
+</nav>
+</header>
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">PROUDLY POTENT</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left"></p>
+    <p class="w3-right">
+      
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://www.cornerstoneofrecovery.com/wp-content/uploads/2020/02/problem-with-weed-1.jpg" alt="pp" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+      <h1 class="w3-jumbo w3-hide-small">Welcome</h1>
+      <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+      <p><a href="#pp" class="w3-button w3-black w3-padding-large w3-large w3-hover-light-green">VIEW PRODUCTS</a></p>
+    </div>
+  </div>
+
+
+<div class="w3-container w3-text-grey" id="pp">
+	<h1 class="w3-jumbo w3-container" style="color:#4d9900;">FEATURED</h1>
+    <p>8 items</p>
+  </div>
+<!-- Product grid -->
+<div class="w3-container w3-text-grey" id="pp">
+<div class="w3-row">
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <img src="https://www.zeevapor.com/wp-content/uploads/2019/07/puffcopeakinsert3logofinal.jpg" style="width:100%">
+      <p>WEED NAME<br><b></b></p>
+    </div>
+    <div class="w3-container">
+      <img src="https://media.merryjane.com/eyJidWNrZXQiOiJmaWxlcy5tZXJyeWphbmUuY29tIiwia2V5IjoidXBsb2Fkcy9nZW5lcmljLzE1NjkyNzUwMzAzMDdfaW1hZ2UzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NDAwLCJmaXQiOiJjb3ZlciIsImZvcm1hdCI6ImpwZyJ9fX0=" style="width:100%">
+      <p>WEED NAME<br><b></b></p>
+    </div>
+  </div>
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="https://cdn.shopify.com/s/files/1/0298/5384/3515/products/biscotti.waxcigar.BR.jpg?v=1597271578" style="width:100%">
+
+      </div>
+      <p>WEED NAME<br><b>$19.99</b></p>
+    </div>
+    <div class="w3-container">
+      <img src="https://mytribe.global.ssl.fastly.net/mytribe-storage/products/images/70275/large/18097691_IMG_0012.JPG" style="width:100%">
+      <p>WEED NAME<br><b>$20.50</b></p>
+    </div>
+  </div>
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <img src="https://35hv8m1oaush478bye3txic1-wpengine.netdna-ssl.com/wp-content/uploads/2019/07/unnamed-300x300.jpg" style="width:100%">
+      <p>WEED NAME<br><b>$20.50</b></p>
+    </div>
+    <div class="w3-container">
+      <div class="w3-display-container">
+        <img src="https://bostonglobe-prod.cdn.arcpublishing.com/resizer/ym6v8-7zCKZSNYIVJ6htIrrVzZQ=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/AJ3NJ3URDII6TKMT3LLT5Y6CRY.jpg" style="width:100%">
+      </div>
+      <p>WEED NAME<br><b class="w3-text-green">$14.99</b></p>
+    </div>
+  </div>
+
+  <div class="w3-col l3 s6">
+    <div class="w3-container">
+      <img src="https://weedmaps.com/news/wp-content/uploads/2019/07/1554829565-greasemonkeycrumble.jpg" style="width:100%">
+      <p>WEED NAME<br><b>$14.99</b></p>
+    </div>
+    <div class="w3-container">
+      <img src="https://images.weedmaps.com/products/000/192/775/avatar/original/1599066816-WM_Shatter_Bag_white.jpg" style="width:100%">
+      <p>WEED NAME<br><b>$24.99</b></p>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+<h1 style="color:#4d9900;">Flower</h1>
+
+      <h5><b>Keylime Pie (NEW)</h5></b>
+      <p class="w3-text-grey">Key Lime Pie from Burning Bush Nurseries is a gourmet phenotype of the superstar strain Girl Scout Cookies. Selected for its strong indica characteristics and heavy resin production, this dynamic hybrid boasts flavors of lime candy, mint, and spice that spark flavors of earth and chocolate when activated by heat. The buds of Key Lime Pie regularly show traces of purple hues due to the plant’s affinity towards colder temperatures. The relaxing body effects that help to relieve chronic pain and insomnia have been known to overwhelm those less familiar with cannabis. (Hybrid)</p><br>
+    
+      <h5><b>Wedding Cake (NEW)</h5></b>
+      <p class="w3-text-grey">Wedding Cake is a uplifting indica-dominant hybrid strain known for its relaxing and euphoric effects. Wedding cake is rich and tangy with earthy and peppery flavors. According to breeder Seed Junky Genetics, Wedding Cake, also known as Pink Cookies, is a phenotype of Triangle Mints. This delectable treat of a strain should be enjoyed with a double dose of care due to its extremely high THC content. (INDICA)</p><br>
+    
+      <h5><b>Lava Cake</h5></b>
+      <p class="w3-text-grey">Lava Cake is a powerful indica-hybrid marijuana strain crossed between Thin Mint GSC and Grape Pie. Bred by Cannarado Genetics, Lava Cake is widely celebrated for its deliciously sweet flavor profile that puts out exceptionally smooth and cakey terpenes. Some users who smoke this strain say that it smells similar to freshly baked goods. The high you get from smoking Lava Cake will put your mind and body into a deep state of relaxation. This strain is ideal for after work, lazy days off, or for anyone seeking relief from anxiety and stress. Lava Cake buds come in a dense, bulbous structure with rich hues of purple and green that are camouflaged by dense and glistening trichomes.</p><br>
+    
+      <h5><b>Wedding Cake (NEW)</h5></b>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+     <h5><b>Wedding Cake (NEW)</h5></b>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+
+<h1 style="color:#4d9900;">Concentrates</h1>
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+<h1 style="color:#4d9900;">Edibles</h1>
+	
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/var/www/html/zapp/head.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+    </div>  
+
+<div class="column">
+
+
+<!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact To Order!</h3>
+    <p>Please include order in message.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section w3-hover-light-green" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+
+
+
+

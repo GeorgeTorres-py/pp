@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>PROUDLY POTENT</title>
+</head>
+<script>
+  // Accordion
+  function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") === -1) {
+      x.className += " w3-show";
+    } else {
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+
+  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  document.getElementById("myBtn").click();
+
+
+  // Open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+</script>
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"> <a onclick="myAccFunc()" href="/var/www/html/zapp/index.html" id="myBtn"><b>PROUDLY POTENT</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-.text-success" style="font-weight:bold">
+    <a onclick="myAccFunc()" href="/var/www/html/zapp/flower.html" class="w3-button w3-block w3-white w3-left-align w3-hover-light-green" id="myBtn">FLOWER </a>
+	<a onclick="myAccFunc()" href="/var/www/html/zapp/concentrate.html" class="w3-button w3-block w3-white w3-left-align w3-hover-light-green" id="myBtn">CONCENTRATE </a>
+    <a onclick="myAccFunc()" href="/var/www/html/zapp/edibles.html" class="w3-button w3-block w3-white w3-left-align w3-hover-light-green" id="myBtn"> EDIBLES </a>
+    </a>
+
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">PROUDLY POTENT</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+<body>
+.bgimg {
+  background-image: url('/var/www/html/zapp/header.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</body>
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+
+<div class="w3-container w3-text-grey" id="pp">
+	<h1 class="w3-jumbo w3-hide-small" style="color:#4d9900">FLOWER</h1>
+    <p>Featured Flower</p>
+  </div>
+
+    <!-- Product grid -->
+  <div class="w3-row">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/var/www/html/zapp/preroll.jpg" style="width:100%">
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+      <div class="w3-container">
+        <img src="/var/www/html/zapp/preroll.jpg" style="width:100%">
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+    </div>
+
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/var/www/html/zapp/weed.jpg" style="width:100%">
+          
+        </div>
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+      <div class="w3-container">
+        <img src="/var/www/html/zapp/weed.jpg" style="width:100%">
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/var/www/html/zapp/concentrate.jpg" style="width:100%">
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/var/www/html/zapp/edible1.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/var/www/html/zapp/preroll1.jpg" style="width:100%">
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+      <div class="w3-container">
+        <img src="/var/www/html/zapp/concentrate1.jpg" style="width:100%">
+        <p><b class="w3-text-black">WEED NAME</b><br></p>
+      </div>
+    </div>
+  </div>
+
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+<h1 style="color:#4d9900;">Flower Menu</h1>
+
+      <h5><b>Keylime Pie (NEW)</h5></b>
+      <p class="w3-text-grey">Key Lime Pie from Burning Bush Nurseries is a gourmet phenotype of the superstar strain Girl Scout Cookies. Selected for its strong indica characteristics and heavy resin production, this dynamic hybrid boasts flavors of lime candy, mint, and spice that spark flavors of earth and chocolate when activated by heat. The buds of Key Lime Pie regularly show traces of purple hues due to the plant’s affinity towards colder temperatures. The relaxing body effects that help to relieve chronic pain and insomnia have been known to overwhelm those less familiar with cannabis. (Hybrid)</p><br>
+    
+      <h5><b>Wedding Cake (NEW)</h5></b>
+      <p class="w3-text-grey">Wedding Cake is a uplifting indica-dominant hybrid strain known for its relaxing and euphoric effects. Wedding cake is rich and tangy with earthy and peppery flavors. According to breeder Seed Junky Genetics, Wedding Cake, also known as Pink Cookies, is a phenotype of Triangle Mints. This delectable treat of a strain should be enjoyed with a double dose of care due to its extremely high THC content. (INDICA)</p><br>
+    
+      <h5><b>Lava Cake</h5></b>
+      <p class="w3-text-grey">Lava Cake is a powerful indica-hybrid marijuana strain crossed between Thin Mint GSC and Grape Pie. Bred by Cannarado Genetics, Lava Cake is widely celebrated for its deliciously sweet flavor profile that puts out exceptionally smooth and cakey terpenes. Some users who smoke this strain say that it smells similar to freshly baked goods. The high you get from smoking Lava Cake will put your mind and body into a deep state of relaxation. This strain is ideal for after work, lazy days off, or for anyone seeking relief from anxiety and stress. Lava Cake buds come in a dense, bulbous structure with rich hues of purple and green that are camouflaged by dense and glistening trichomes.</p><br>
+    
+      <h5><b>Wedding Cake (NEW)</h5></b>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+     <h5><b>Wedding Cake (NEW)</h5></b>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+</div>
+
+<img src="https://makonitimes.files.wordpress.com/2016/09/wp-1473091108313.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+
+
+<!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact To Order!</h3>
+    <p>Please include order in message.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section w3-hover-light-green" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+
+
+
